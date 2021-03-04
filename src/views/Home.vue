@@ -11,9 +11,7 @@
       I always love to create and learn awesome stuff.
     </p>
     
-
-
-    <br><br><br><br><br><br><br>
+    <br><br><br>
 
     <h2 class="sub-heading">Technology</h2>
 
@@ -36,27 +34,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.right-container {
-  padding-left: 20px;
-  margin: 50px 0;
-  text-align: left;
-
-  .page-title-container {
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-  }
-
-  .page-title, .sub-heading {
-    font-size: 24px;
-  }
-
-  .welcome-msg {
-    font-size: 20px;
-  }
-
-  .programming-icon {
-    padding: 20px;
-  }
-}
 
 </style>

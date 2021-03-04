@@ -2,17 +2,17 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
-        <div class="left-container border-end">
+        <div class="left-container border-start border-end shadow-sm">
           <div class="thumbnail-container">
             <img src="./assets/pfpics.jpeg" alt="" srcset="" class="rounded-circle shadow">
           </div>
           <h1 class="title-name">Vincent Dante</h1>
           <div class="link-container">
             <router-link to="/" class="a-link">Home</router-link>
-            <router-link to="/" class="a-link">About</router-link>
-            <router-link to="/" class="a-link">Education</router-link>
-            <router-link to="/" class="a-link">Projects</router-link>
-            <router-link to="/" class="a-link">Experience</router-link>
+            <router-link to="/about" class="a-link">About</router-link>
+            <router-link to="/education" class="a-link">Education</router-link>
+            <router-link to="/projects" class="a-link">Projects</router-link>
+            <router-link to="/experience" class="a-link">Experience</router-link>
           </div>
           
           <div class="left-container-icon">
@@ -40,6 +40,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background: #f4f4f4;
 }
 
 .left-container {
@@ -47,6 +48,9 @@
   position: sticky;
   top: 0;
   padding-top: 50px;
+  height: 100vh;
+  background: #fff;
+  
 
   .thumbnail-container {
     height: 150px;
@@ -66,7 +70,7 @@
   .link-container {
     display: grid;
     justify-content: center;
-    padding: 50px 0;
+    padding: 30px 0;
 
     a {
       text-decoration: none;
@@ -87,14 +91,27 @@
   }
 }
 
-.left-container::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  right: -8px;
-  background: #fff;
-  border: 1px solid #d5d5d5;
-  border-radius: 50%;
+.right-container {
+  text-align: left;
+  padding-top: 50px;
+
+  .page-title-container {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .welcome-msg, .sub-heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .programming-icon {
+    padding: 20px;
+  }
 }
 </style>
