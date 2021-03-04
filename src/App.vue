@@ -22,9 +22,12 @@
           </div>       
         </div>
       </div>
-      <div class="col-lg-9">
-        <!-- add transition here - ongoing -->
-        <router-view/>
+      <div class="col-lg-9 left-container-parent">
+        <router-view v-slot="{ Component }">
+          <transition enter-active-class="animate__animated animate__fadeIn">
+            <component :is="Component" />
+          </transition>
+        </router-view>
       </div>
     </div>
   </div>
@@ -34,6 +37,10 @@
 </template>
 
 <style lang="scss">
+body {
+  overflow: hidden;
+}
+
 #app {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -80,6 +87,24 @@
       color: #2c3e50;
       padding: 10px 0;
     }
+
+    a::after {
+      display:block;
+      content: '';
+      border-bottom: 3px solid #2c3e50;  
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
+      transform-origin:  0% 50%;
+    }
+    a:hover::after {
+      transform: scaleX(1); 
+    }
+
+    .router-link-active {  
+      transition: 1s ease-in;
+      font-style: italic;
+      text-decoration: line-through;
+    }
   }
 
   .left-container-icon {
@@ -91,9 +116,17 @@
   }
 }
 
+.left-container-parent {
+  position: relative;
+}
+
 .right-container {
+  position: absolute;
+  top: 0;
   text-align: left;
   padding-top: 50px;
+  overflow: hidden;
+  width: 100%;
 
   .page-title-container {
     padding-bottom: 10px;
@@ -105,7 +138,9 @@
     font-weight: bold;
   }
 
-  .welcome-msg, .sub-heading {
+  .welcome-msg, 
+  .sub-heading 
+  {
     font-size: 20px;
     font-weight: bold;
   }
@@ -114,4 +149,6 @@
     padding: 20px;
   }
 }
+
+
 </style>

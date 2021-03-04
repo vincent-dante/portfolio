@@ -4,14 +4,19 @@
       <h1 class="page-title">About</h1>
     </div>
 
-    <p><span class="welcome-msg">Web Developer / Graphics Designer</span></p>
+    <div class="animate__animated animate__fadeInUp">
+      <p>
+        <span class="welcome-msg">Web Developer / Graphics Designer</span>
+      </p>
 
-    <p>Hi, My name is Vincent Dante, I live in Philippines.</p>
-    <p>
-      I build website using the latest technology using HTML5, CSS3, JavaScript ES6, VueJS, NodeJS and many more.
-      I enjoy solving complex problem into simple solution.
-    </p>
-    <p>I love to design and create awesome and interactive website.</p>
+      <p>Hi, My name is Vincent Dante, I live in Philippines.</p>
+      <p>
+        I build website using the latest technology using HTML5, CSS3, JavaScript ES6, VueJS, NodeJS and many more.
+        I enjoy solving complex problem into simple solution.
+      </p>
+      <p>I love to design and create awesome and interactive website.</p>
+    </div>
+
 
     
 
