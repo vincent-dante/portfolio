@@ -1,7 +1,7 @@
 <template>
-  <div class="right-container">
+  <div class="content-container">
     <div class="page-title-container border-bottom">
-      <h1 class="page-title">About</h1>
+      <h1 class="page-title animate__animated animate__slideInLeft">About</h1>
     </div>
 
     <div class="animate__animated animate__fadeInUp">
