@@ -36,25 +36,27 @@
 
 <style lang="scss">
 body {
-  background: #f4f4f4;
+  background: #dddddd;
 }
 
 #app {
-  font-family: 'Raleway', sans-serif;
+/*   font-family: 'Raleway', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /* color: #2c3e50; */
+  color: #30475e;
 }
 
 .sidebar {
   position: fixed;
   top: 0;
   padding-top: 50px;
-  background: #fff;
+  background: #222831;
   height: 100%;
   width: 261px;
-  
+  color: #f05454;
 
   .thumbnail-container {
     height: 150px;
@@ -81,14 +83,15 @@ body {
       text-align: left;
       display: block;
       font-size: 16px;
-      color: #2c3e50;
+      /* color: #2c3e50; */
+      color: #f05454;
       padding: 10px 0;
     }
 
     a::after {
       display:block;
       content: '';
-      border-bottom: 3px solid #2c3e50;  
+      border-bottom: 3px solid #f05454;  
       transform: scaleX(0);  
       transition: transform 250ms ease-in-out;
       transform-origin:  0% 50%;
@@ -127,18 +130,19 @@ body {
       padding-bottom: 10px;
       margin-bottom: 30px;
       overflow: hidden;
+      border-bottom: 1px solid #30475e;
     }
 
     .page-title {
       font-size: 24px;
-      font-weight: bold;
+      font-weight: 500;
     }
 
     .welcome-msg, 
     .sub-heading 
     {
       font-size: 20px;
-      font-weight: bold;
+      font-weight: 500;
     }
 
     .programming-icon {

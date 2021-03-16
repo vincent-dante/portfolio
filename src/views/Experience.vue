@@ -1,6 +1,6 @@
 <template>
   <div class="content-container">
-    <div class="page-title-container border-bottom">
+    <div class="page-title-container">
       <h1 class="page-title animate__animated animate__slideInLeft">Experience</h1>
     </div>
 
