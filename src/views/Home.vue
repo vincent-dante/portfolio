@@ -18,7 +18,7 @@
     
     <br><br><br>
 
-    <h2 class="sub-heading">Technology</h2>
+    <h2 class="sub-heading">Technology I Use.</h2>
 
     <div class="animate__animated animate__bounceInUp">
       <i class="fab fa-3x fa-js programming-icon a1"></i>

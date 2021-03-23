@@ -13,7 +13,7 @@
       <div class="project-container-item">
         <div class="project-item shadow">
           <a href="">
-            <img src="../assets/manga-online.jpg" alt="image" srcset="">
+            <img src="../assets/manga-online5.jpg" alt="image" srcset="">
             <div class="project-item-description">
               <h2>
                 Manga Online
@@ -24,13 +24,12 @@
         </div>
         <div class="project-item shadow">
           <a href="">
-            <img src="../assets/antonios.jpg" alt="image" srcset="">
+            <img src="../assets/marvel-api1.jpg" alt="image" srcset="">
             <div class="project-item-description">
               <h2>
-                Antonios Restaurant
-                <span>Web Design | Restaurant Demo</span>
+                Marvel Api
+                <span>Development | Marvel Api Project</span>
               </h2>
-              
             </div>
           </a>
         </div>
@@ -56,7 +55,7 @@ export default {
 }
 
 .project-item {
-  border-radius: 2px;
+  border-radius: 5px;
   overflow: hidden;
 
   a {
@@ -77,7 +76,7 @@ export default {
     bottom: 0;  
     left: 0;
     right: 0;
-    background: #02152899;
+    background: #222831de;
     transition: all 0.5s ease-in-out;
     text-align: center;
     color: #fff;
