@@ -5,35 +5,18 @@
     </div>
 
     <div class="animate__animated animate__fadeInUp">
-      <a href="#">Web Design</a> /
-      <a href="#">Graphic Design</a>
+      <router-link to="/projects/" class="link-projects">Web Design</router-link> |
+      <router-link to="/projects/graphicdesign" class="link-projects">Graphic Design</router-link> 
       
-      <br>
-      <br>
-      <div class="project-container-item">
-        <div class="project-item shadow">
-          <a href="">
-            <img src="../assets/manga-online5.jpg" alt="image" srcset="">
-            <div class="project-item-description">
-              <h2>
-                Manga Online
-                <span>Web Design | Manga Reader Demo</span>
-              </h2>
-            </div>
-          </a>
-        </div>
-        <div class="project-item shadow">
-          <a href="">
-            <img src="../assets/marvel-api1.jpg" alt="image" srcset="">
-            <div class="project-item-description">
-              <h2>
-                Marvel Api
-                <span>Development | Marvel Api Project</span>
-              </h2>
-            </div>
-          </a>
-        </div>
+
+      <div class="content-projects">
+        <router-view v-slot="{ Component }">
+          <transition enter-active-class="animate__animated animate__slideInUp">
+            <component :is="Component" />
+          </transition>
+        </router-view>
       </div>
+
     </div>
 
   </div>
@@ -46,77 +29,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.project-container-item {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  width: 100%; 
-  padding: 50px 0;
+
+.link-projects {
+  color: #909090;
+  text-decoration: none;
 }
 
-.project-item {
-  border-radius: 5px;
-  overflow: hidden;
-
-  a {
-    position: relative;
-    display: block;    
-    background-color: #ddd;
-  }
-
-  img {
-    width: 100%;
-    transition: all 0.9s ease;
-  }
-
-  .project-item-description {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;  
-    left: 0;
-    right: 0;
-    background: #222831de;
-    transition: all 0.5s ease-in-out;
-    text-align: center;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  h2 {
-    opacity: 0;
-    vertical-align: middle;
-    transition: all 0.2s ease-in-out;
-    font-weight: bold;
-    text-shadow: 0 0 20px #000;
-
-   span {
-     display: block;
-     font-size: 20px;
-     font-weight: normal;
-   } 
-  }
-  
+.content-projects {
+  margin: 50px 0 200px 0;
 }
 
-.project-item:hover 
-img 
-{
-  transform: scale(1.3);
+.router-link-exact-active {  
+  color: #e71a1a;
+  transition: all 0.5s;
 }
 
-.project-item:hover 
-.project-item-description 
-{
-  opacity: 1;
-}
-
-.project-item:hover 
-h2 
-{
-  opacity: 1;
-  transform: scale(0.8);
-}
 </style>

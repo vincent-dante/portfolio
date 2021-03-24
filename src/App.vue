@@ -11,7 +11,7 @@
             <router-link to="/" class="a-link">Home</router-link>
             <router-link to="/about" class="a-link">About</router-link>
             <router-link to="/education" class="a-link">Education</router-link>
-            <router-link to="/projects" class="a-link">Projects</router-link>
+            <router-link to="/projects/" class="a-link">Projects</router-link>
             <router-link to="/experience" class="a-link">Experience</router-link>
           </div>
           <div class="sidebar-container-icon">
@@ -150,8 +150,5 @@ body {
     }
   }
 }
-
-
-
 
 </style>

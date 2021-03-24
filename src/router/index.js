@@ -4,6 +4,8 @@ import About from '../views/About.vue'
 import Education from '../views/Education.vue'
 import Projects from '../views/Projects.vue'
 import Experience from '../views/Experience.vue'
+import ProjectsWebDesign from '../views/ProjectsWebDesign.vue'
+import ProjectsGraphicDesign from '../views/ProjectsGraphicDesign.vue'
 
 const routes = [
   {
@@ -14,10 +16,6 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    //component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     component: About
   },
   {
@@ -28,7 +26,17 @@ const routes = [
   {
     path: '/projects',
     name: 'Projects',
-    component: Projects
+    component: Projects,
+    children: [
+      {
+        path: '',
+        component: ProjectsWebDesign
+      },
+      {
+        path: 'graphicdesign',
+        component: ProjectsGraphicDesign
+      }      
+    ]
   },
   {
     path: '/experience',
