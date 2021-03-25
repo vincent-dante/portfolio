@@ -22,6 +22,17 @@
         </div>
       </a>
     </div>   
+    <div class="project-item shadow">
+      <a href="">
+        <img src="../assets/pokemon-api1.jpg" alt="image" srcset="">
+        <div class="project-item-description">
+          <h2>
+            Poké Api
+            <span>Development | Poké Api Project</span>
+          </h2>
+        </div>
+      </a>
+    </div>   
   </div>
 </template>
 
