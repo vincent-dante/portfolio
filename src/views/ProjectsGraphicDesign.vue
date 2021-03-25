@@ -48,7 +48,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .graphics-item-container {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +61,5 @@ export default {
       width: 100%;
     }
   }
-
 }
 </style>
