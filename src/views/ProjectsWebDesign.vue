@@ -1,19 +1,20 @@
 <template>
+
   <div class="project-container-item">
     <div class="project-item shadow">
-      <a href="">
-        <img src="../assets/manga-online5.jpg" alt="image" srcset="">
+      <router-link to="/projects/mangaonline">
+        <img src="../assets/manga-online5.jpg" alt="Manga Online" srcset="">
         <div class="project-item-description">
           <h2>
             Manga Online
             <span>Web Design | Manga Reader Demo</span>
           </h2>
         </div>
-      </a>
+      </router-link>
     </div>
     <div class="project-item shadow">
       <a href="">
-        <img src="../assets/marvel-api1.jpg" alt="image" srcset="">
+        <img src="../assets/marvel-api1.jpg" alt="Marvel Api" srcset="">
         <div class="project-item-description">
           <h2>
             Marvel Api
@@ -24,7 +25,7 @@
     </div>   
     <div class="project-item shadow">
       <a href="">
-        <img src="../assets/pokemon-api1.jpg" alt="image" srcset="">
+        <img src="../assets/pokemon-api1.jpg" alt="Poké Api" srcset="">
         <div class="project-item-description">
           <h2>
             Poké Api
@@ -34,6 +35,7 @@
       </a>
     </div>   
   </div>
+
 </template>
 
 <script>
@@ -57,7 +59,7 @@ export default {
   a {
     position: relative;
     display: block;    
-    background-color: #ddd;
+    background: #222831;
   }
 
   img {

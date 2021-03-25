@@ -19,6 +19,10 @@
 
     </div>
 
+    <!-- 
+      add title on every project
+     -->
+
   </div>
 </template>
 
@@ -39,7 +43,8 @@ export default {
   margin: 50px 0 200px 0;
 }
 
-.router-link-exact-active {  
+.router-link-exact-active
+{  
   color: #e71a1a;
   transition: all 0.5s;
 }

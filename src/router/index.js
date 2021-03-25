@@ -6,6 +6,7 @@ import Projects from '../views/Projects.vue'
 import Experience from '../views/Experience.vue'
 import ProjectsWebDesign from '../views/ProjectsWebDesign.vue'
 import ProjectsGraphicDesign from '../views/ProjectsGraphicDesign.vue'
+import MangaOnline from '../views/projects/MangaOnline.vue'
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
       {
         path: 'graphicdesign',
         component: ProjectsGraphicDesign
+      },
+      {
+        path: 'mangaonline',
+        name: 'mangaonline',
+        component: MangaOnline
       }      
     ]
   },
