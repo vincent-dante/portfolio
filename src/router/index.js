@@ -7,6 +7,8 @@ import Experience from '../views/Experience.vue'
 import ProjectsWebDesign from '../views/ProjectsWebDesign.vue'
 import ProjectsGraphicDesign from '../views/ProjectsGraphicDesign.vue'
 import MangaOnline from '../views/projects/MangaOnline.vue'
+import MarvelApi from '../views/projects/MarvelApi.vue'
+import PokemonApi from '../views/projects/PokemonApi.vue'
 
 const routes = [
   {
@@ -41,7 +43,17 @@ const routes = [
         path: 'mangaonline',
         name: 'mangaonline',
         component: MangaOnline
-      }      
+      },      
+      {
+        path: 'marvelapi',
+        name: 'marvelapi',
+        component: MarvelApi
+      },      
+      {
+        path: 'pokemonapi',
+        name: 'pokemonapi',
+        component: PokemonApi
+      } 
     ]
   },
   {

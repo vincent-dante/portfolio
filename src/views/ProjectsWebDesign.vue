@@ -13,7 +13,7 @@
       </router-link>
     </div>
     <div class="project-item shadow">
-      <a href="">
+      <router-link to="/projects/marvelapi">
         <img src="../assets/marvel-api1.jpg" alt="Marvel Api" srcset="">
         <div class="project-item-description">
           <h2>
@@ -21,10 +21,10 @@
             <span>Development | Marvel Api Project</span>
           </h2>
         </div>
-      </a>
+      </router-link>
     </div>   
     <div class="project-item shadow">
-      <a href="">
+      <router-link to="/projects/pokemonapi">
         <img src="../assets/pokemon-api1.jpg" alt="Poké Api" srcset="">
         <div class="project-item-description">
           <h2>
@@ -32,7 +32,7 @@
             <span>Development | Poké Api Project</span>
           </h2>
         </div>
-      </a>
+      </router-link>
     </div>   
   </div>
 
