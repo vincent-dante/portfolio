@@ -16,10 +16,11 @@
     <br>
     <br>
 
-    <img src="../../assets/manga-online5.jpg" alt="" srcset="">
+    <img src="../../assets/manga-online5.jpg" alt="" srcset="" class="shadow">
 
-    <h2>Inroduction</h2>
-    <p>Manga Online is manga reader that i made when i took my TESTDA course.</p>
+    <h2>Background</h2>
+    <p>Manga Online is a project i made for my final project for my TESTDA course.</p>
+    <p>Live Website: <a href="http://vincentdante.epizy.com/mangaonline/page/home.html" target="_blank">MangaOnline</a></p>
   </div>
 </template>
 

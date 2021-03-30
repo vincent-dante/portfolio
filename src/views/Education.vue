@@ -8,22 +8,29 @@
       <h2 class="sub-heading">
         Informatics College Manila ( 2014 - 2017 ) 
       </h2>
-      <p>Bachelor of Science in Information Technology</p>
-      <p>2070 BDO Building, Claro M. Recto Avenue Quiapo, Manila</p>
+      <p>Bachelor of Science in Information Technology <br>
+        <small class="text-muted">2070 BDO Building, Claro M. Recto Avenue Quiapo, Manila</small>
+      </p>
       
       <br>
 
       <h2 class="sub-heading">
         Pres. Sergio Osmeña Highschool ( 2010 - 2014 )
       </h2>
-      <p>560 Pampanga St. Gagalangin, Tondo, Manila</p>
+      <p>
+        <small class="text-muted">560 Pampanga St. Gagalangin, Tondo, Manila</small>
+      </p>
+      
 
       <br>
       
       <h2 class="sub-heading">
         Marcela Agoncillo Elementary School ( 2003 - 2009 )
       </h2>
-      <p>276 San Fernando St. Binondo, Manila</p>
+      <p>
+        <small class="text-muted">276 San Fernando St. Binondo, Manila
+        </small>
+      </p>
     </div>
 
   </div>

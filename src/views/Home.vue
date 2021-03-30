@@ -10,7 +10,7 @@
       </p>
 
       <p>
-        I'm a web developer and designer with a degree of Bachelor of Science in Information Technology.
+        I'm a web developer and designer with a degree of Bachelor of Science in Information Technology.<br>
         I always love to create and learn awesome stuff.
       </p>
     </div>

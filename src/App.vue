@@ -1,23 +1,25 @@
 <template>
+
+
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
         <div class="sidebar border-start border-end shadow-sm">
           <div class="thumbnail-container">
-            <img src="./assets/pfpics.jpeg" alt="" srcset="" class="rounded-circle shadow">
+            <img src="./assets/vincent-dante.jpg" alt="" srcset="" class="rounded-circle shadow">
           </div>
           <h1 class="title-name">Vincent Dante</h1>
           <div class="link-container">
             <router-link to="/" class="a-link">Home</router-link>
             <router-link to="/about" class="a-link">About</router-link>
-            <router-link to="/education" class="a-link">Education</router-link>
             <router-link to="/projects/" class="a-link">Projects</router-link>
+            <router-link to="/education" class="a-link">Education</router-link>
             <router-link to="/experience" class="a-link">Experience</router-link>
           </div>
           <div class="sidebar-container-icon">
-            <i class="fab fa-2x fa-github media-icon"></i>
-            <i class="fab fa-2x fa-linkedin media-icon"></i>
-            <i class="fab fa-2x fa-facebook media-icon"></i>
+            <a href="https://github.com/vincent-dante" target="_blank"><i class="fab fa-2x fa-github media-icon"></i></a>
+            <a href="https://www.linkedin.com/in/vincent-dante-41358b143/" target="_blank"><i class="fab fa-2x fa-linkedin media-icon"></i></a>
+            <a href="https://www.facebook.com/vincentwhiteangel.dante/" target="_blank"><i class="fab fa-2x fa-facebook media-icon"></i></a>
           </div>       
         </div>
       </div>
@@ -40,8 +42,9 @@ body {
 }
 
 #app {
+  font-family: 'Montserrat', sans-serif;
 /*   font-family: 'Raleway', sans-serif; */
-  font-family: 'Quicksand', sans-serif;
+/*   font-family: 'Quicksand', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -49,106 +52,182 @@ body {
   color: #30475e;
 }
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  padding-top: 50px;
-  background: #222831;
-  height: 100%;
-  width: 261px;
-  color: #f05454;
+    .sidebar {
 
-  .thumbnail-container {
-    height: 150px;
+      background: #222831;
 
-    img {
+
+      .thumbnail-container {
+        height: 50px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .title-name {
+        font-size: 24px;
+        font-family: 'Nothing You Could Do', cursive;
+        padding-top: 30px;
+        margin: 0;
+      }
+
+      .link-container {
+        display: grid;
+        justify-content: center;
+        padding: 30px 0;
+
+        a {
+          text-decoration: none;
+          text-align: left;
+          display: block;
+          font-size: 16px;
+          /* color: #2c3e50; */
+          color: #c14343;
+          padding: 10px 0;
+        }
+
+        a::after {
+          display:block;
+          content: '';
+          border-bottom: 3px solid #f05454;  
+          transform: scaleX(0);  
+          transition: transform 250ms ease-in-out;
+          transform-origin:  0% 50%;
+        }
+        a:hover::after {
+          transform: scaleX(1); 
+        }
+
+        .router-link-active {  
+          transition: 0.3s;
+          font-weight: bold;
+          color: #f05454;
+        }
+      }
+
+      .sidebar-container-icon {
+        a {
+          color: #c14343;
+        }
+        a:hover {
+          color: #f05454;
+        }
+
+        .media-icon {
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+  @media only screen and (min-width: 992px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      padding-top: 50px;
+      background: #222831;
       height: 100%;
-    }
-  }
-
-  .title-name {
-    font-size: 24px;
-    font-family: 'Nothing You Could Do', cursive;
-    padding-top: 30px;
-    margin: 0;
-  }
-
-  .link-container {
-    display: grid;
-    justify-content: center;
-    padding: 30px 0;
-
-    a {
-      text-decoration: none;
-      text-align: left;
-      display: block;
-      font-size: 16px;
-      /* color: #2c3e50; */
+      width: 261px;
       color: #f05454;
-      padding: 10px 0;
+
+      .thumbnail-container {
+        height: 150px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .title-name {
+        font-size: 24px;
+        font-family: 'Nothing You Could Do', cursive;
+        padding-top: 30px;
+        margin: 0;
+      }
+
+      .link-container {
+        display: grid;
+        justify-content: center;
+        padding: 30px 0;
+
+        a {
+          text-decoration: none;
+          text-align: left;
+          display: block;
+          font-size: 16px;
+          /* color: #2c3e50; */
+          color: #c14343;
+          padding: 10px 0;
+        }
+
+        a::after {
+          display:block;
+          content: '';
+          border-bottom: 3px solid #f05454;  
+          transform: scaleX(0);  
+          transition: transform 250ms ease-in-out;
+          transform-origin:  0% 50%;
+        }
+        a:hover::after {
+          transform: scaleX(1); 
+        }
+
+        .router-link-active {  
+          transition: 0.3s;
+          font-weight: bold;
+          color: #f05454;
+        }
+      }
+
+      .sidebar-container-icon {
+        a {
+          color: #c14343;
+        }
+        a:hover {
+          color: #f05454;
+        }
+
+        .media-icon {
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
     }
 
-    a::after {
-      display:block;
-      content: '';
-      border-bottom: 3px solid #f05454;  
-      transform: scaleX(0);  
-      transition: transform 250ms ease-in-out;
-      transform-origin:  0% 50%;
+    .main {
+      position: relative;
+
+      .content-container {
+        text-align: left;
+        padding-top: 50px;
+        width: 100%;
+        min-height: 800px;
+        
+
+        .page-title-container {
+          padding-bottom: 10px;
+          margin-bottom: 30px;
+          overflow: hidden;
+          border-bottom: 1px solid #30475e;
+        }
+
+        .page-title {
+          font-size: 28px;
+        }
+
+        .welcome-msg, 
+        .sub-heading 
+        {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .programming-icon {
+          padding: 20px;
+        }
+      }
     }
-    a:hover::after {
-      transform: scaleX(1); 
-    }
-
-    .router-link-active {  
-      transition: 1s ease-in;
-      font-style: italic;
-      text-decoration: line-through;
-    }
-  }
-
-  .sidebar-container-icon {
-
-    .media-icon {
-      padding: 10px;
-      cursor: pointer;
-    }
-  }
-}
-
-.main {
-  position: relative;
-
-  .content-container {
-    text-align: left;
-    padding-top: 50px;
-    width: 100%;
-    min-height: 800px;
-    
-
-    .page-title-container {
-      padding-bottom: 10px;
-      margin-bottom: 30px;
-      overflow: hidden;
-      border-bottom: 1px solid #30475e;
-    }
-
-    .page-title {
-      font-size: 24px;
-      font-weight: 500;
-    }
-
-    .welcome-msg, 
-    .sub-heading 
-    {
-      font-size: 20px;
-      font-weight: 500;
-    }
-
-    .programming-icon {
-      padding: 20px;
-    }
-  }
-}
-
+  } 
 </style>

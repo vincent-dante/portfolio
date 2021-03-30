@@ -16,10 +16,13 @@
     <br>
     <br>
 
-    <img src="../../assets/pokemon-api1.jpg" alt="" srcset="">
+    <img src="../../assets/pokemon-api1.jpg" alt="" srcset="" class="shadow">
 
-    <h2>Inroduction</h2>
-    <p></p>
+    <h2>Background</h2>
+    <p>
+      This project i use Poke Api for getting pokemon data.<br>
+    </p>
+    <p>Live Website: <a href="https://pokemon-app-vincentdante.herokuapp.com" target="_blank">PokeApi</a></p>
   </div>
 </template>
 

@@ -16,10 +16,14 @@
     <br>
     <br>
 
-    <img src="../../assets/marvel-api1.jpg" alt="" srcset="">
+    <img src="../../assets/marvel-api1.jpg" alt="" srcset="" class="shadow">
 
-    <h2>Inroduction</h2>
-    <p></p>
+    <h2>Background</h2>
+    <p>
+      Marvel Characters is a project a made for Marvel Api.<br>
+      It's fun working on this project because i learn a lot about api and also working on my favorite marvel characters.
+    </p>
+    <p>Live Website: <a href="https://marvel-app-vincentdante.herokuapp.com" target="_blank">Marvel Characters</a></p>
   </div>
 </template>
 
