@@ -54,11 +54,19 @@ export default {
   width: 100%;
 
   .project-g-column {
-    width: 33%;
+    width: 100%;
 
     img {
       padding: 10px;
       width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .graphics-item-container {
+    .project-g-column {
+      width: 33%;
     }
   }
 }

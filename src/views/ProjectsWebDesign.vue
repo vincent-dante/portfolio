@@ -47,7 +47,7 @@ export default {
 <style lang="scss" scoped>
 .project-container-item {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 20px;
   width: 100%; 
 }
@@ -115,5 +115,11 @@ h2
 {
   opacity: 1;
   transform: scale(0.8);
+}
+
+@media only screen and (min-width: 992px) {
+  .project-container-item { 
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>
