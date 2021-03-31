@@ -1,18 +1,48 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="content-container">
+    <div class="page-title-container">
+      <h1 class="page-title animate__animated animate__slideInLeft">Home</h1>
+    </div>
+    
+    <div class="animate__animated animate__fadeInUp">
+      <p>
+        <span class="welcome-msg">Hi there welcome to my portfolio!</span>
+      </p>
+
+      <p>
+        I'm a web developer and designer with a degree of Bachelor of Science in Information Technology.<br>
+        I always love to create and learn awesome stuff.
+      </p>
+    </div>
+
+    
+    <br><br><br>
+
+    <h2 class="sub-heading">Technology I Use.</h2>
+
+    <div class="animate__animated animate__bounceInUp">
+      <i class="fab fa-3x fa-js programming-icon a1"></i>
+      <i class="fab fa-3x fa-node-js programming-icon a2"></i>
+      <i class="fab fa-3x fa-vuejs programming-icon a3"></i>
+      <i class="fab fa-3x fa-html5 programming-icon a4"></i>
+      <i class="fab fa-3x fa-css3 programming-icon a5"></i>
+      <i class="fab fa-3x fa-laravel programming-icon a6"></i>
+      <i class="fab fa-3x fa-php programming-icon a7"></i>
+    </div>
+
+
+    
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  name: 'Home'
 }
 </script>
+
+<style lang="scss" scoped>
+.programming-icon-container {
+  height: 200px;
+}
+</style>
