@@ -2,4 +2,5 @@
 
 Hi there :wave: this is my project for my Porftfolio.
 
-### :construction: Project is on going...
+## Live Preview
+https://portfolio-vincentdante.herokuapp.com/
