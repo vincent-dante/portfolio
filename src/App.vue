@@ -7,7 +7,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <img src="./assets/vincent-dante.jpg" alt="" srcset="" class="rounded-circle shadow navbar-img">
+        <img src="./assets/vincent.jpg" alt="" srcset="" class="rounded-circle shadow navbar-img">
         <h1 class="navbar-name">Vincent Dante</h1>
         
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-ul">
@@ -28,7 +28,7 @@
           </li>
         </ul>
         <div class="sidebar-container-icon">
-          <a href="https://github.com/vincent-dante" target="_blank"><i class="fab fa-2x fa-github media-icon"></i></a>
+          <a href="https://github.com/vincent" target="_blank"><i class="fab fa-2x fa-github media-icon"></i></a>
           <a href="https://www.linkedin.com/in/vincent-dante-41358b143/" target="_blank"><i class="fab fa-2x fa-linkedin media-icon"></i></a>
           <a href="https://www.facebook.com/vincentwhiteangel.dante/" target="_blank"><i class="fab fa-2x fa-facebook media-icon"></i></a>
         </div>
@@ -42,7 +42,7 @@
       <div class="col-lg-3">
         <div class="sidebar border-start border-end shadow-sm">
           <div class="thumbnail-container">
-            <img src="./assets/vincent-dante.jpg" alt="" srcset="" class="rounded-circle shadow">
+            <img src="./assets/vincent.jpg" alt="" srcset="" class="rounded-circle shadow">
           </div>
           <h1 class="title-name">Vincent Dante</h1>
           <div class="link-container">
