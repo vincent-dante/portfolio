@@ -2,23 +2,12 @@
 
   <div class="project-container-item">
     <div class="project-item shadow">
-      <router-link to="/projects/mangaonline">
-        <img src="../assets/manga-online5.jpg" alt="Manga Online" srcset="">
+      <router-link to="/projects/nasaapi">
+        <img src="../assets/nasa-api1.jpg" alt="Nasa Api" srcset="">
         <div class="project-item-description">
           <h2>
-            Manga Online
-            <span>Web Design | Manga Reader Demo</span>
-          </h2>
-        </div>
-      </router-link>
-    </div>
-    <div class="project-item shadow">
-      <router-link to="/projects/marvelapi">
-        <img src="../assets/marvel-api1.jpg" alt="Marvel Api" srcset="">
-        <div class="project-item-description">
-          <h2>
-            Marvel Api
-            <span>Development | Marvel Api Project</span>
+            Nasa Api
+            <span>Development | Nasa Api Project</span>
           </h2>
         </div>
       </router-link>
@@ -33,7 +22,29 @@
           </h2>
         </div>
       </router-link>
+    </div> 
+    <div class="project-item shadow">
+      <router-link to="/projects/marvelapi">
+        <img src="../assets/marvel-api1.jpg" alt="Marvel Api" srcset="">
+        <div class="project-item-description">
+          <h2>
+            Marvel Api
+            <span>Development | Marvel Api Project</span>
+          </h2>
+        </div>
+      </router-link>
     </div>   
+    <div class="project-item shadow">
+      <router-link to="/projects/mangaonline">
+        <img src="../assets/manga-online5.jpg" alt="Manga Online" srcset="">
+        <div class="project-item-description">
+          <h2>
+            Manga Online
+            <span>Web Design | Manga Reader Demo</span>
+          </h2>
+        </div>
+      </router-link>
+    </div>
   </div>
 
 </template>

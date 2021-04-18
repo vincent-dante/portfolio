@@ -9,6 +9,7 @@ import ProjectsGraphicDesign from '../views/ProjectsGraphicDesign.vue'
 import MangaOnline from '../views/projects/MangaOnline.vue'
 import MarvelApi from '../views/projects/MarvelApi.vue'
 import PokemonApi from '../views/projects/PokemonApi.vue'
+import NasaApi from '../views/projects/NasaApi.vue'
 
 const routes = [
   {
@@ -53,6 +54,11 @@ const routes = [
         path: 'pokemonapi',
         name: 'pokemonapi',
         component: PokemonApi
+      }, 
+      {
+        path: 'nasaapi',
+        name: 'nasaapi',
+        component: NasaApi
       } 
     ]
   },
